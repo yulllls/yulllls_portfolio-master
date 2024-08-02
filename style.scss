@@ -1592,7 +1592,7 @@ body {
 }
 
 .detail_project {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   margin: 0 auto;
   top: 50%;
@@ -1606,7 +1606,7 @@ body {
 
 
 
-  .solo_project1_box {
+  .project1_box /* .solo_project1_box */ {
     /* display: none; */
     width: 1280px;
     display: flex;
@@ -1617,7 +1617,7 @@ body {
 
 
 
-    .solo_project1_lantern {
+    .project1_lantern /* .solo_project1_lantern */ {
       /* width: 600px; */
       height: 30px;
       background-color: #00CD3C;
@@ -1641,7 +1641,7 @@ body {
       }
     }
 
-    .solo_project1_line {
+    .project1_line /* solo_project1_line */ {
       position: relative;
       display: flex;
       flex-wrap: wrap;
@@ -1652,13 +1652,12 @@ body {
       box-shadow: 0 1rem 2rem hsla(0, 0%, 0%, 0.2);
       border-radius: 20px;
 
-      .solo_project1_box_h2 {
+      .project1_box_h2 /* solo_project1_box_h2 */ {
         font-family: 'yg-jalnan';
         /* margin-top: 100px; */
         width: 100%;
         height: 100px;
         /* background-color: rgba(0, 0, 0, 70%); */
-        background-color: #00CD3C;
         color: white;
         font-size: 40px;
         line-height: 100px;
@@ -1666,7 +1665,15 @@ body {
         border-radius: 20px 20px 0 0;
       }
 
-      .solo_exit {
+      .solo_project1_box_h2{
+        background-color: #00CD3C;
+      }
+
+      .tim_project1_box_h2{
+        background-color:#002053;
+      }
+
+      .exit /* solo_exit */ {
         position: absolute;
         right: 45px;
         top: 26px;
@@ -1675,7 +1682,7 @@ body {
         cursor: pointer;
       }
 
-      .solo_project1_box_left {
+      .project1_box_left /* solo_project1_box_left */ {
         width: 620px;
         display: flex;
         flex-wrap: wrap;
@@ -1694,7 +1701,7 @@ body {
 
       }
 
-      .solo_project1_box_right {
+      .project1_box_right /* solo_project1_box_right */ {
         width: 640px;
 
         p {
@@ -1763,7 +1770,7 @@ body {
           width: 100%;
           padding-top: 20px;
           padding-bottom: 50px;
-          margin-left: -25px;
+          margin-left: -35px;
 
 
           .swiper-slide {
@@ -1831,7 +1838,7 @@ body {
 
   }
 
-  .react_project1_box {
+/*   .react_project1_box {
     display: none;
   }
 
@@ -1843,9 +1850,17 @@ body {
   .login_project1_box {
     display: none;
   }
-
+ */
 
 }
+
+/* .solo_detail_project{
+  position: fixed;
+} */
+
+/* .tim_detail_project{
+  position: fixed;
+} */
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
 

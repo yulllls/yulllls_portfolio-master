@@ -1217,7 +1217,7 @@ body {
 }
 
 .detail_project {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   margin: 0 auto;
   top: 50%;
@@ -1228,8 +1228,21 @@ body {
   /*         background: url(./img/페이지꾸미기/양피지.png)no-repeat ;
   background-size: 100% 100%; */
   z-index: 999;
+  /*   .react_project1_box {
+      display: none;
+    }
+
+
+    .tim_project1_box {
+      display: none;
+    }
+
+    .login_project1_box {
+      display: none;
+    }
+   */
 }
-.detail_project .solo_project1_box {
+.detail_project .project1_box {
   /* display: none; */
   width: 1280px;
   display: flex;
@@ -1237,7 +1250,7 @@ body {
   /*  height: 80vh; */
   margin: 0 auto;
 }
-.detail_project .solo_project1_box .solo_project1_lantern {
+.detail_project .project1_box .project1_lantern {
   /* width: 600px; */
   height: 30px;
   background-color: #00CD3C;
@@ -1257,7 +1270,7 @@ body {
     background-color: #00CD3C;
   }
 }
-.detail_project .solo_project1_box .solo_project1_line {
+.detail_project .project1_box .project1_line {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1268,20 +1281,25 @@ body {
   box-shadow: 0 1rem 2rem hsla(0, 0%, 0%, 0.2);
   border-radius: 20px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_h2 {
+.detail_project .project1_box .project1_line .project1_box_h2 {
   font-family: "yg-jalnan";
   /* margin-top: 100px; */
   width: 100%;
   height: 100px;
   /* background-color: rgba(0, 0, 0, 70%); */
-  background-color: #00CD3C;
   color: white;
   font-size: 40px;
   line-height: 100px;
   text-align: center;
   border-radius: 20px 20px 0 0;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_exit {
+.detail_project .project1_box .project1_line .solo_project1_box_h2 {
+  background-color: #00CD3C;
+}
+.detail_project .project1_box .project1_line .tim_project1_box_h2 {
+  background-color: #002053;
+}
+.detail_project .project1_box .project1_line .exit {
   position: absolute;
   right: 45px;
   top: 26px;
@@ -1289,40 +1307,40 @@ body {
   color: white;
   cursor: pointer;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_left {
+.detail_project .project1_box .project1_line .project1_box_left {
   width: 620px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   /* overflow: hidden; */
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_left img {
+.detail_project .project1_box .project1_line .project1_box_left img {
   width: 525px;
   /* height: 353px; */
   height: 740px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right {
+.detail_project .project1_box .project1_line .project1_box_right {
   width: 640px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right p {
+.detail_project .project1_box .project1_line .project1_box_right p {
   margin-top: 25px;
   line-height: 25px;
   margin-bottom: 20px;
   font-weight: bold;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right strong {
+.detail_project .project1_box .project1_line .project1_box_right strong {
   font-size: 25px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .solo_project1_box_list {
+.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list {
   display: flex;
   justify-content: flex-start;
   height: 75px;
   align-items: flex-end;
   margin-bottom: 30px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .solo_project1_box_list a {
+.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list a {
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -1332,12 +1350,12 @@ body {
   /* margin-bottom: 20px; */
   margin-right: 10px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .solo_project1_box_list a .sp_btn_all {
+.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list a .sp_btn_all {
   color: white;
   font-size: 20px;
   line-height: 47px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .solo_project1_box_list .sp_btn_all {
+.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list .sp_btn_all {
   width: 200px;
   height: 50px;
   background-color: #707070;
@@ -1350,32 +1368,32 @@ body {
   line-height: 47px;
   cursor: pointer;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .solo_project1_box_list .sp_btn_all:hover {
+.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list .sp_btn_all:hover {
   background-color: #00CD3C;
   color: white;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .swiper {
+.detail_project .project1_box .project1_line .project1_box_right .swiper {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 50px;
-  margin-left: -25px;
+  margin-left: -35px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .swiper .swiper-slide {
+.detail_project .project1_box .project1_line .project1_box_right .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 200px;
   height: 200px;
   margin-right: 10px;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .swiper .swiper-slide img {
+.detail_project .project1_box .project1_line .project1_box_right .swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_box_right .swiper .swiper-pagination-bullet-active {
+.detail_project .project1_box .project1_line .project1_box_right .swiper .swiper-pagination-bullet-active {
   background-color: #00CD3C;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_code_container {
+.detail_project .project1_box .project1_line .solo_project1_code_container {
   width: 1260px;
   height: 80vh;
   position: absolute;
@@ -1383,10 +1401,10 @@ body {
   left: 0;
   /* overflow-y: scroll; */
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_code_container .solo_project1_code_box {
+.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box {
   position: relative;
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return {
+.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return {
   cursor: pointer;
   position: absolute;
   top: -62px;
@@ -1395,23 +1413,20 @@ body {
   font-weight: bold;
   font-family: "yg-jalnan";
 }
-.detail_project .solo_project1_box .solo_project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return .fa-chevron-left {
+.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return .fa-chevron-left {
   position: absolute;
   top: 1px;
   left: -19px;
   font-size: 25px;
   color: white;
 }
-.detail_project .react_project1_box {
-  display: none;
-}
-.detail_project .tim_project1_box {
-  display: none;
-}
-.detail_project .login_project1_box {
-  display: none;
-}
 
+/* .solo_detail_project{
+  position: fixed;
+} */
+/* .tim_detail_project{
+  position: fixed;
+} */
 /*
  * Animation module with all animation code
  */
@@ -1440,67 +1455,67 @@ body {
 }
 @keyframes anim-text-flow-keys {
   0% {
-    color: hsl(259, 60%, 60%);
+    color: hsl(350, 60%, 60%);
   }
   5% {
-    color: hsl(8, 60%, 60%);
+    color: hsl(130, 60%, 60%);
   }
   10% {
-    color: hsl(160, 60%, 60%);
+    color: hsl(256, 60%, 60%);
   }
   15% {
-    color: hsl(39, 60%, 60%);
+    color: hsl(306, 60%, 60%);
   }
   20% {
-    color: hsl(286, 60%, 60%);
+    color: hsl(154, 60%, 60%);
   }
   25% {
-    color: hsl(247, 60%, 60%);
+    color: hsl(24, 60%, 60%);
   }
   30% {
-    color: hsl(191, 60%, 60%);
+    color: hsl(156, 60%, 60%);
   }
   35% {
-    color: hsl(281, 60%, 60%);
+    color: hsl(285, 60%, 60%);
   }
   40% {
-    color: hsl(217, 60%, 60%);
+    color: hsl(220, 60%, 60%);
   }
   45% {
-    color: hsl(26, 60%, 60%);
-  }
-  50% {
-    color: hsl(325, 60%, 60%);
-  }
-  55% {
     color: hsl(357, 60%, 60%);
   }
+  50% {
+    color: hsl(30, 60%, 60%);
+  }
+  55% {
+    color: hsl(232, 60%, 60%);
+  }
   60% {
-    color: hsl(57, 60%, 60%);
+    color: hsl(78, 60%, 60%);
   }
   65% {
-    color: hsl(129, 60%, 60%);
+    color: hsl(74, 60%, 60%);
   }
   70% {
-    color: hsl(85, 60%, 60%);
+    color: hsl(36, 60%, 60%);
   }
   75% {
-    color: hsl(243, 60%, 60%);
+    color: hsl(135, 60%, 60%);
   }
   80% {
-    color: hsl(201, 60%, 60%);
+    color: hsl(268, 60%, 60%);
   }
   85% {
-    color: hsl(98, 60%, 60%);
+    color: hsl(160, 60%, 60%);
   }
   90% {
-    color: hsl(305, 60%, 60%);
+    color: hsl(52, 60%, 60%);
   }
   95% {
-    color: hsl(141, 60%, 60%);
+    color: hsl(263, 60%, 60%);
   }
   100% {
-    color: hsl(301, 60%, 60%);
+    color: hsl(196, 60%, 60%);
   }
 }
 .moment_h2 span:nth-of-type(1),

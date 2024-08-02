@@ -226,6 +226,10 @@ window.addEventListener('scroll', () => {
      if (window.scrollY >= 6400) {
       header.style.top = '0px'
       skill.style.color = ''
+      project.style.color = 'red'
+    }else {
+      project.style.color = ''
+  
     }
 
 });
@@ -629,21 +633,35 @@ const timReadMore = document.querySelector('.tim_project1-1 .read_more')
 const loginReadMore = document.querySelector('.login_project1-1 .read_more')
 
 const detailProject = document.querySelector('.detail_project')
+const solodetailProject = document.querySelector('.solo_detail_project')
+const timdetailProject = document.querySelector('.tim_detail_project')
 
 const projectPage = document.querySelector('.project_Page')
 const projectPageBox = document.querySelector('.project_page_box')
 
 const soloExit = document.querySelector('.solo_exit')
+const timExit = document.querySelector('.tim_exit')
 
 let reactReadMoreClick = false;
 detailProject.style.visibility = 'hidden'
+solodetailProject.style.visibility = 'hidden'
+timdetailProject.style.visibility = 'hidden'
 
 soloReadMore.addEventListener('click', (event) => {
   event.preventDefault();
-  detailProject.style.visibility = 'visible'
+  solodetailProject.style.visibility = 'visible'
   soloProject.style.visibility = 'visible'
   soloProject1BoxLeft.style.visibility = 'visible'
   soloProject1BoxRight.style.visibility = 'visible'
+  document.body.style.overflow = 'hidden'
+})
+
+timReadMore.addEventListener('click', (event) => {
+  event.preventDefault();
+  timdetailProject.style.visibility = 'visible'
+  timProject.style.visibility = 'visible'
+  timProject1BoxLeft.style.visibility = 'visible'
+  timProject1BoxRight.style.visibility = 'visible'
   document.body.style.overflow = 'hidden'
 })
 
@@ -750,6 +768,9 @@ replayIco.addEventListener('click', () => {
 });
 
 
+const timProject1BoxLeft = document.querySelector('.tim_project1_box_left')
+const timProject1BoxRight = document.querySelector('.tim_project1_box_left')
+
 const soloProject1BoxLeft = document.querySelector('.solo_project1_box_left')
 const soloProject1BoxRight = document.querySelector('.solo_project1_box_right')
 const soloCodeView = document.querySelectorAll('.solo_code_view')
@@ -780,16 +801,23 @@ soloProject1CodeReturn.addEventListener('click', () => {
 })
 
 soloExit.addEventListener('click', () => {
-  detailProject.style.visibility = 'hidden'
+  solodetailProject.style.visibility = 'hidden'
   soloProject.style.visibility = 'hidden'
   soloProject1BoxLeft.style.visibility = 'hidden'
   soloProject1BoxRight.style.visibility = 'hidden'
   soloProject1CodeContainer.style.display = 'none'
   document.body.style.overflow = ''
-
-
-
 })
+
+timExit.addEventListener('click', () => {
+  timdetailProject.style.visibility = 'hidden'
+  timProject.style.visibility = 'hidden'
+  timProject1BoxLeft.style.visibility = 'hidden'
+  timProject1BoxRight.style.visibility = 'hidden'
+  /* timProject1CodeContainer.style.display = 'none' */
+  document.body.style.overflow = ''
+})
+
 
 const tabList = document.querySelectorAll('.solo_project1_tab_menu .list li');
 
