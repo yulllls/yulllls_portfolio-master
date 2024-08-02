@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>율황_포트폴리오</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="./style.scss"> -->
+  <link rel="stylesheet" href="/style.e308ff8e.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- GSAP 라이브러리 추가 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <!-- ScrollTrigger 플러그인 추가 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+ <!--  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
+
+
+  <script src="/main.fb6bbcaf.js" defer=""></script>
+
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+
+  <div class="intro_video">
+    <video class="intro_video_element" src="/인트로페이지_레터박스.44cefbfd.mp4" autoplay="" muted=""></video>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill"></div>
+    </div>
+
+    <div class="video_skip">
+      skip
+    </div>
+
+
+  </div>
+
+  <header class="header">
+
+    <div class="header_lnb">
+
+      <div class="header_time">
+        <div class="time">
+          <!-- <p>2023.06.13 16:00</p> -->
+          <li></li>
+        </div>
+      </div>
+
+      <div class="header_center">
+        <a href="/index.html"><img class="lnb_icon" src="/lnb_icon.6c81f647.png" alt="1"></a>
+
+      </div>
+
+      <div class="header_gnb">
+        <div class="intro">intro</div>
+        <div class="profile">profile</div>
+        <div class="skill">skill</div>
+        <div class="project">project</div>
+        <div class="contact">contact</div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="intro_Page">
+
+    <!-- <h2>DAILY PORTFOLIO</h2> -->
+    <div class="intro_Page_text_box">
+      <svg width="1280" height="200">
+        <filter id="money">
+          <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="expand"></feMorphology>
+
+          <feOffset in="expand" dx="1" dy="1" result="shadow_1"></feOffset>
+          <feOffset in="expand" dx="2" dy="2" result="shadow_2"></feOffset>
+          <feOffset in="expand" dx="3" dy="3" result="shadow_3"></feOffset>
+          <feOffset in="expand" dx="4" dy="4" result="shadow_4"></feOffset>
+          <feOffset in="expand" dx="5" dy="5" result="shadow_5"></feOffset>
+          <feOffset in="expand" dx="6" dy="6" result="shadow_6"></feOffset>
+          <feOffset in="expand" dx="7" dy="7" result="shadow_7"></feOffset>
+
+
+          <feMerge result="shadow">
+            <feMergeNode in="expand"></feMergeNode>
+            <feMergeNode in="shadow_1"></feMergeNode>
+            <feMergeNode in="shadow_2"></feMergeNode>
+            <feMergeNode in="shadow_3"></feMergeNode>
+            <feMergeNode in="shadow_4"></feMergeNode>
+            <feMergeNode in="shadow_5"></feMergeNode>
+            <feMergeNode in="shadow_6"></feMergeNode>
+            <feMergeNode in="shadow_7"></feMergeNode>
+
+          </feMerge>
+
+          <feFlood flood-color="#ebe7e0"></feFlood>
+          <feComposite in2="shadow" operator="in" result="shadow"></feComposite>
+
+          <feMorphology in="shadow" operator="dilate" radius="1" result="border"></feMorphology>
+          <feFlood flood-color="#35322a" result="border_color"></feFlood>
+          <feComposite in2="border" operator="in" result="border"></feComposite>
+
+          <feOffset in="border" dx="1" dy="1" result="secondShadow_1"></feOffset>
+          <feOffset in="border" dx="2" dy="2" result="secondShadow_2"></feOffset>
+          <feOffset in="border" dx="3" dy="3" result="secondShadow_3"></feOffset>
+          <feOffset in="border" dx="4" dy="4" result="secondShadow_4"></feOffset>
+          <feOffset in="border" dx="5" dy="5" result="secondShadow_5"></feOffset>
+          <feOffset in="border" dx="6" dy="6" result="secondShadow_6"></feOffset>
+          <feOffset in="border" dx="7" dy="7" result="secondShadow_7"></feOffset>
+          <feOffset in="border" dx="8" dy="8" result="secondShadow_8"></feOffset>
+          <feOffset in="border" dx="9" dy="9" result="secondShadow_9"></feOffset>
+          <feOffset in="border" dx="10" dy="10" result="secondShadow_10"></feOffset>
+          <feOffset in="border" dx="11" dy="11" result="secondShadow_11"></feOffset>
+
+
+          <feMerge result="secondShadow">
+            <feMergeNode in="border"></feMergeNode>
+            <feMergeNode in="secondShadow_1"></feMergeNode>
+            <feMergeNode in="secondShadow_2"></feMergeNode>
+            <feMergeNode in="secondShadow_3"></feMergeNode>
+            <feMergeNode in="secondShadow_4"></feMergeNode>
+            <feMergeNode in="secondShadow_5"></feMergeNode>
+            <feMergeNode in="secondShadow_6"></feMergeNode>
+            <feMergeNode in="secondShadow_7"></feMergeNode>
+            <feMergeNode in="secondShadow_8"></feMergeNode>
+            <feMergeNode in="secondShadow_9"></feMergeNode>
+            <feMergeNode in="secondShadow_10"></feMergeNode>
+            <feMergeNode in="secondShadow_11"></feMergeNode>
+
+
+          </feMerge>
+
+
+          <feImage x="0" y="0" width="1280" height="200" preserveAspectRatio="none" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg"></feImage>
+          <feComposite in2="secondShadow" operator="in" result="secondShadow"></feComposite>
+
+          <feMerge>
+            <feMergeNode in="secondShadow"></feMergeNode>
+            <feMergeNode in="border"></feMergeNode>
+            <feMergeNode in="shadow"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+        </filter>
+
+        <text class="intro_Page_text" dominant-baseline="middle" text-anchor="middle" x="50%" y="50%">
+          DAILY PORTFOLIO
+        </text>
+      </svg>
+    </div>
+
+
+    <div class="intro_box">
+
+
+      <img class="intro_img" src="/인트로_전면_수정.b8446f73.jpg" alt="intro">
+
+      <div class="intro_video_replay_box">
+
+        <div class="intro_video_replay_text">You can watch the intro video that appeared on the first screen again! <img class="smile_ico" src="/웃는이모티콘.5d1867cb.png" alt="1"></div>
+
+        <img class="intro_video_replay_img" src="/인트로영상다시보기2.7a8cd8ab.png" alt="1">
+
+        <div class="replay_ico">
+          Replay!
+          <i class="fas fa-hand-point-right"></i>
+        </div>
+      </div>
+
+      <div class="intro_text_center">
+        “ if (창의적인) {<br>열정적이고 도전적인<br> 모습으로 성장하는<br> 신입 개발자입니다.} ”
+      </div>
+      <div class="intro_text_center_side">
+        /*창의적인이라는 변수가 boolean 타입이라서 true는 생략...*/
+      </div>
+
+
+      <div class="intro_text_bottom">
+        <strong> "위대한 일을 하려면 당신이 하는 일을 사랑해야 한다." </strong> - 스티브 잡스 <br> &nbsp;( The only way to do great work is to
+        love what you do. )
+      </div>
+
+    </div>
+
+    <div class="mouse">
+      <div class="animation_mouse">
+        <img src="/마우스.5c3af0e1.png" alt="mouse">
+        <i class="fas fa-angle-down"></i>
+      </div>
+      <p>마우스를 아래로 내려주세요 :)</p>
+    </div>
+
+  </div>
+
+  <div class="profile_Page">
+
+    <h2 class="whoAmI">Who Am I?</h2>
+
+    <h3 class="profile_h3">Profile</h3>
+
+    <div class="profile_box">
+
+      <div class="profile_left">
+        <img class="profile_img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" src="/profile_Page.c3c867d3.png" alt="1">
+        <p class="profile_Page_img_text">*본 사진은 연출된 사진입니다.</p>
+      </div>
+
+
+
+
+      <div class="profile_right">
+
+
+        <div class="profile_list">
+          <ul>
+            <li>이름 : 전율황</li>
+            <li>성별 : 남</li>
+            <li>키 : 188cm</li>
+            <li>생년월일 : 1995.11.04</li>
+            <li>연락처 : 010-5665-8384</li>
+            <li>이메일 : wjsdbfghkd@gmail.com</li>
+            <li>주소지 : 부산진구 엄광로 334-1 2층</li>
+            <li>학력 : 부산 폴리텍 메카트로닉스과 졸업<br>
+              그린컴퓨터아카데미 프론트엔드반 수료
+            </li>
+            <li>취미 : 음악감상(피아노,뉴에이지), 보드게임, 운동, 산책, 서스팬스 장르의 미디어, 게임, 노래, 볼링, 스노우보드, 에새이책 읽기, 상상하기, 기획, 수다, 사진찍기, 밸런스게임
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="profile_box2">
+
+      <div class="profile_left2">
+
+        <h2>그를 소개하는 3가지 멘트</h2>
+
+        <div class="strong_box">
+          <p class="strong_text">다</p>
+          <p class="strong_text_line">양한 취미를 가지고 있으며 <br> 이러한 원동력으로 더욱 긍정적이고<br> 에너지 넘치는 모습을 보여주고 있습니다!</p>
+        </div>
+        <p class="profile_box2_text"><strong>2)</strong>도전을 두려워하지 않으며 항상 나아가기 위한 발걸음을<br> 멈추지 않겠습니다!</p>
+        <p class="profile_box2_text profile_box2_text_underLine"><strong>3)</strong>내가 즐거움을 느껴야 사용자도 즐거움을 느낀다! <br> 애살과
+          창의적인 아이디어로 눈도 즐겁고 기발한 홈페이지를<br> 제작하겠습니다.</p>
+
+        <div class="small_news_box">
+
+          <img class="small_news" src="/작은신문_수정_테스트2.8f6096bf.jpg" alt="1">
+
+        </div>
+
+      </div>
+
+
+
+      <div class="profile_right2">
+
+        <h2>TV에 등장했다고 하는데?</h2>
+
+        <!-- <img class="imgTv" src="./img/본인/방송사진2.jpg" alt="2"> -->
+
+        <div class="swiper profile_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/방송사진1.6ee5fe51.jpg" alt="1"></div>
+            <div class="swiper-slide"><img src="/방송사진2.c8394998.png" alt="2"></div>
+            <div class="swiper-slide"><img src="/방송사진3.98c1862f.gif" alt="3"></div>
+          </div>
+
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+
+        <p class="profile_tv_text"> 지상파에서 촬영을 한 현장입니다.<br><br>
+          발표와 같이 생각을 표현하는 것을 좋아하여 순발력과<br>
+          재치로 촬영을 잘 마무리 하였고 이러한 저의 장점은<br>
+          개발 현장에서도 분명히 도움이 되리라 생각합니다! <br><br>
+
+          그 밖에도 통통 튀는 다양한 매력을 보여드릴 수 있습니다 :)
+        </p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <div class="skill_page">
+
+    <h2 class="skill_page_h2">그가 가진 기술은 어떨까?</h2>
+
+    <div class="skill_page_box">
+
+      <div class="skill_page_left">
+
+        <div class="Language_box">
+
+          <h3>Languange</h3>
+
+          <div class="html progres_chart">
+            <img class="htmlImg" src="/html.759c807c.png" alt="1">
+            <div class="progress-bar">
+              <div class="progress progress1"></div>
+            </div>
+            <p class="num">85%</p>
+          </div>
+
+          <div class="css progres_chart">
+            <img class="cssImg" src="/css.cf18594e.png" alt="2">
+            <div class="progress-bar">
+              <div class="progress progress2"></div>
+            </div>
+            <p class="num">85%</p>
+          </div>
+
+          <div class="js progres_chart">
+            <img class="jsImg" src="/js.79f605c6.png" alt="3">
+            <div class="progress-bar">
+              <div class="progress progress3"></div>
+            </div>
+            <p class="num">65%</p>
+          </div>
+
+        </div>
+
+
+
+        <h3 class="FrameWork_h3">FrameWork</h3>
+
+
+        <div class="react">
+          <div class="FrameWork progres_chart">
+            <img src="/React.c06f23a7.png" alt="1">
+            <div class="progress-bar">
+              <div class="progress progress4"></div>
+            </div>
+            <p class="num FrameWork_num">40%</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="skill_page_right">
+
+        <div class="Library">
+
+          <h3>Library</h3>
+
+          <div class="jquery progres_chart">
+            <img class="jqueryImg" src="/jquery.62abe43b.png" alt="1">
+            <div class="progress-bar">
+              <div class="progress progress5"></div>
+            </div>
+            <p class="num">60%</p>
+          </div>
+
+          <div class="scss progres_chart">
+            <img src="/scss.daf82127.png" alt="2">
+            <div class="progress-bar">
+              <div class="progress progress6"></div>
+            </div>
+            <p class="num">70%</p>
+          </div>
+        </div>
+
+        <div class="Etc">
+
+          <h3 class="etc_h3">Etc</h3>
+
+          <div class="etc_box">
+
+            <div class="vsCode ">
+              <img src="/vs code.56a8c81c.png" alt="1">
+              <p class="Etc_p">vsCode</p>
+            </div>
+
+            <div class="git">
+              <img class="gitImg" src="/git.c1ea1d3d.png" alt="2">
+              <p class="Etc_p">git</p>
+            </div>
+
+            <div class="gitHub">
+              <img class="gitHubImg" src="/github.8f53abc5.png" alt="3">
+              <p class="Etc_p">gitHub</p>
+            </div>
+
+          </div> <!-- etc_box -->
+
+        </div> <!-- Etc -->
+
+      </div> <!-- skill_page_right -->
+
+    </div> <!-- skill_page_box -->
+
+  </div> <!-- skill_page -->
+
+
+
+
+  <div class="news_page">
+
+    <div class="news_page_top">
+
+      <div class="main_news_list">
+        <div class="main_news_box">
+          <img class="main_news" src="/신문전면수정.ab3efa51.png" alt="1">
+        </div>
+      </div>
+
+      <div class="sub_news_list">
+        <div class="sub_news_box1">
+          <img class="sub_news_1" src="/왼쪽사이드신문수정.e95d5fc2.png" alt="2">
+        </div>
+        <div class="sub_news_box2">
+          <img class="sub_news_2" src="/오른쪽사이드신문수정.dab2befa.png" alt="3">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="news_page_bottom" class="news_page_bottom">
+
+
+
+<!--       <div class="hidden">
+        <img class="hidden_btn" src="./img/페이지꾸미기/off랜턴.png" width="350px" height="175px" alt="1">
+
+        <div class="autotext">
+          <span>어</span>
+          <span>두</span>
+          <span>워</span>
+          <span>진&nbsp;</span>
+          <span>신</span>
+          <span>문</span>
+          <span>에&nbsp;</span>
+          <span>랜</span>
+          <span>턴</span>
+          <span>을&nbsp;</span>
+          <span>밝</span>
+          <span>혀</span>
+          <span>주</span>
+          <span>세</span>
+          <span>요</span>
+        </div>
+
+      </div> -->
+
+    </div>
+
+
+    <div class="project_Page">
+
+
+      <div class="project_page_container">
+
+        <h2 class="project_page_h2">그가 만든 프로젝트 항목들</h2>
+
+        <div class="project_page_box">
+
+
+          <div class="project_page_left">
+
+            <div class="back_whale">
+              <img src="/사막고래2.68720ad4.png" alt="1">
+            </div>
+
+
+            <div class="solo_project1">
+
+              <div class="solo_project1-1">
+                <div class="solo_project_imgbox">
+                
+                  <img class="solo_project_img" src="/멜론.a7b6e17d.png" alt="1">
+
+                  <img class="scotch_tape" src="/스카치테이프.90c3e312.png" alt="2">
+                 
+
+                </div>
+
+                <div class="project_text">개인프로젝트 - 멜론 리뉴얼 사이트<br><br>
+                  반응형 사이트 - 메인페이지, 서브페이지 구현 , 음원추가 <br><br>
+                  사용 : html:5 , css , js , jq
+
+                  <div class="progect_btn_list">
+                    <div class="read_more pg_btn_all">
+                     
+                      자세히 보기
+                    
+                    </div>
+
+                    <a target="_blank" href="https://yulllls.github.io/yulhwang.github.io/">
+                      <div class="site_view pg_btn_all">
+                        사이트 보기
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+
+              <div class="react_project1-1">
+                <div class="react_project_imgbox">
+
+                  <a href="">
+                    <img class="react_project_img" src="/리액트-심술.5f59555d.png" alt="">
+
+                    <img class="scotch_tape" src="/스카치테이프.90c3e312.png" alt="2">
+                  </a>
+                </div>
+
+
+                <div class="project_text">개인프로젝트 - 리액트 사이트<br><br>
+                  완성 후 추가 하겠습니다 :) <br><br>
+                  사용 : react
+
+                  <div class="progect_btn_list">
+                    <div class="read_more pg_btn_all">
+                   
+                      자세히 보기
+                    
+                    </div>
+                    <div class="site_view pg_btn_all">
+             
+                      사이트 보기
+                   
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div> <!-- solo_project1 -->
+
+          </div> <!-- project_page_left -->
+
+
+          <div class="project_page_right">
+
+            <div class="tim_project1">
+              <div class="tim_project1-1">
+                <div class="tim_project_imgbox">
+                  <a href="">
+                    <img class="tim_project_img" src="/포폴-휠라.eb386c60.png" alt="1">
+                    <img class="scotch_tape" src="/스카치테이프.90c3e312.png" alt="2">
+                  </a>
+                </div>
+
+                <div class="project_text">팀프로젝트 - 휠라 리뉴얼 사이트<br><br>
+                  적응형 사이트 - 메인페이지, 서브페이지, 디테일페이지 구현 <br><br>
+                  사용 : html:5 , js , jq , scss-parcel
+
+                  <div class="progect_btn_list">
+                    <!-- <a href="#"> -->
+                    <div class="read_more pg_btn_all">
+                      자세히 보기
+                    </div>
+                    <!-- </a> -->
+                    <a target="_blank" href="https://yulllls.github.io/fila_project/">
+                      <div class="site_view pg_btn_all">
+
+                        사이트 보기
+
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="login_project1-1">
+                <div class="login_project_imgbox">
+                  <img class="login_project_img" src="/로그인 페이지.102781c0.png" alt="2">
+                  <img class="scotch_tape" src="/스카치테이프.90c3e312.png" alt="2">
+                </div>
+                <div class="project_text">개인프로젝트 - 로그인 페이지<br><br>
+                  적응형 사이트 - 로그인화면, 약관동의 , 정보 입력 구현 <br>
+                  개인프로젝트 및 팀프로젝트 사이트 연동<br><br>
+                  사용 : html:5 , css , js , jq
+
+                  <div class="progect_btn_list">
+                    <div class="read_more pg_btn_all">
+                      <!-- <a href="#"> -->
+                      자세히 보기
+                      <!-- </a> -->
+                    </div>
+                    <div class="site_view pg_btn_all">
+                      <a target="_blank" href="https://yulllls.github.io/fila_project/LOGIN_JOIN/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4/index.html">
+                        사이트 보기
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div> <!-- tim_project1 -->
+
+            <!--  <img class="under_flower" src="./img/페이지꾸미기/꽃밭.png" alt="1"> -->
+
+          </div> <!-- project_page_right -->
+
+        </div> <!-- project_page_box -->
+
+
+      </div> <!-- project_page_container -->
+
+
+
+
+
+
+
+    </div> <!-- project_Page -->
+
+
+  </div> <!-- news_page -->
+
+  <div class="contact_page_back">
+
+    <div class="contact_page">
+
+
+
+      <div class="shot_text"> Success is achieved when you are not satisfied easily and continue to advance!</div>
+      <div class="contact_page_container" data-aos="fade-up" data-aos-duration="1000">
+
+        <div class="contact_left">
+          <img src="/contact.568f5515.png" alt="1">
+        </div>
+
+        <div class="contact_right">
+
+
+          <h2 class="contact_page_h2">The New Face!</h2>
+          <!-- <div class="contact_page_h2">The New Face!</div> -->
+
+
+          <div class="information">
+
+            <div class="information_left">
+              이름 : 전율황<br><br>
+              주소지 : 부산진구 엄광로 334-1 <br><br>
+              이메일 : wjsdbfghkd@gmail.com <br><br>
+              미흡한 포트폴리오 봐주셔서 감사합니다!<br>
+              많은 관심, 연락 부탁 드립니다! :)
+            </div>
+
+
+            <div class="information_right">
+              생년월일 : 1995. 11. 04 <br><br>
+              연락처 : 010-5665-8384<br><br>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="moment">
+
+        <div class="moment_left">
+
+          <p class="moment_left_text"> <strong>인트로 영상에는 비하인드가 있습니다.</strong><br>
+            포트폴리오를 제작하던 도중 문뜩 아이디어가 떠올랐고 재밌겠다라는 생각이 들어 인트로 영상을 만들게 되었습니다. 다만 때는 장마철이였고, 두꺼운 빗줄기와 번개가 치는 와중에 촬영을 하자 주변에 걸어다니던 사람들이 이상한 시선으로 저를 쳐다보던 기억이 떠오릅니다. 
+          </p>
+        </div>
+
+
+        <div class="moment_right">
+
+          <div class="moment_right_text">
+            <h2 class="moment_h2">중요한 사실이 있습니다!</h2>
+
+            <p class="moment_text">본 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.<br> 일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div> <!-- contact_page -->
+
+  </div> <!-- contact_page_back -->
+
+  <div class="detail_project">
+
+
+
+    <div class="solo_project1_box">
+
+      <div class="solo_project1_lantern"></div>
+      <div class="solo_project1_line">
+        <h2 class="solo_project1_box_h2">개인프로젝트 사이트 - 멜론 사이트 리뉴얼</h2>
+        <div class="solo_exit"><i class="fas fa-times"></i></div>
+
+        <div class="solo_project1_box_left">
+          <a target="_blank" href="https://yulllls.github.io/yulhwang.github.io/">
+            <img src="/멜론부분2.7d2c11d1.png" alt="1">
+          </a>
+          <!-- <img src="./img/project_list/멜론-코드.png" alt="2"> -->
+        </div>
+        <div class="solo_project1_box_right">
+          <p><strong> 개인 프로젝트로 제작한 사이트입니다.</strong><br><br>
+            활성화 되어 있는 앱과는 다르게 노후화 된 멜론 사이트를 리뉴얼하고자 제작<br><br>
+
+            사이트 표준 - 반응형 사이트<br><br>
+            제작 기간 - 3주 <br><br>
+            제작 페이지 - 메인페이지, 서브페이지<br><br>
+
+            개발 툴 - vsCode, git, gitHub<br><br>
+            사용프로그램 - html5, css, jq<br>
+
+          </p>
+
+          <div class="solo_project1_box_list">
+            <div class="code_view sp_btn_all solo_code_view">
+              <!-- <a href=""> -->
+              코드리뷰, 제작과정
+              <!-- </a> -->
+            </div>
+
+            <a target="_blank" href="https://yulllls.github.io/yulhwang.github.io/">
+              <div class="site_view sp_btn_all">
+                사이트 보기
+              </div>
+            </a>
+
+
+
+            <a target="_blank" href="https://github.com/yulllls/yulhwang.github.io">
+              <div class="gitHub_more sp_btn_all">
+                gitHub 바로가기
+              </div>
+            </a>
+
+
+          </div>
+
+          <div class="swiper solo_project1_swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="/롤링1.53bab9ee.png" alt="1"></div>
+              <div class="swiper-slide"><img src="/롤링2.5b5288ff.png" alt="2"></div>
+              <div class="swiper-slide"><img src="/롤링3.a63a8400.png" alt="3"></div>
+              <div class="swiper-slide"><img src="/롤링4.6895e9c8.png" alt="4"></div>
+              <div class="swiper-slide"><img src="/롤링5.edeb2a2b.png" alt="5"></div>
+              <div class="swiper-slide"><img src="/롤링6.2ba975eb.png" alt="6"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="solo_project1_code_container">
+
+          <div class="solo_project1_code_box">
+
+
+            <div class="solo_project1_code_return">
+              <i class="fas fa-chevron-left"></i>뒤로가기
+            </div>
+
+            <div class="solo_project1_tab_menu">
+              <ul class="list">
+                <li class="is_on">
+                  <a href="#tab1" class="btn btn1">
+                    <div class="postit_box postit_box1">
+                      <img class="postit" src="/포스트잇클립.7983f2c7.png" alt="1">
+                      <h3>코드 리뷰</h3>
+                    </div>
+
+                  </a>
+                  <div id="tab1" class="cont">
+
+                    <div class="solo1_code_list_view1 solo1_code_list_view">
+                      <h3>1. 주요 기능 - Slick Slider</h3>
+                      <img src="/개인프로젝트 - 코드리뷰 이미지 슬릭.3a7d7f74.png" alt="">
+                      <div class="solo1_code_list_view1_box solo1_code_list_view_box">
+                        <img src="/개인프로젝트 - 코드리뷰1-1.f1df408b.png" alt="">
+                        <img src="/개인프로젝트 - 코드리뷰.a9252222.png" alt="">
+                      </div>
+                      <p>
+                        1) 구현 된 화면 <br>
+                        2) 코드 리뷰 <br>
+                        jquery 기반의 슬라이더 라이브러리, Slick Slider를 사용하여 메인 화면에 슬라이드 기능을 구현하였습니다.
+                      </p>
+
+                    </div><!-- solo1_code_list_view1 -->
+
+                    <div class="solo1_code_list_view2 solo1_code_list_view">
+                      <h3>2. 주요 기능 - User Interface 가시성 개선</h3>
+                      <img src="/개인프로젝트 - 코드리뷰2 lnb 메뉴2.66736ec8.png" alt="">
+                      <div class="solo1_code_list_view_box">
+                        <img src="/개인프로젝트 - 코드리뷰2-1.c3406475.png" alt="">
+                        <img src="/개인프로젝트 - 코드리뷰2-2.48e358aa.png" alt="">
+                      </div>
+                      <p>
+                        1) 구현 된 화면 <br>
+                        2) 코드 리뷰 <br>
+                        사용자가 메뉴를 더 쉽게 찾고 이해할 수 있도록 JavaScript코드를 만들어 GNB,LNB Ui 가시성을 증진시켰습니다.
+                      </p>
+                    </div><!-- solo1_code_list_view2 -->
+
+                    <div class="solo1_code_list_view3 solo1_code_list_view">
+                      <h3>3. 주요 기능 - 음원 듣기 </h3>
+                      <img src="/개인프로젝트 - 코드리뷰 음원2.52e458fa.png" alt="">
+                      <div class="solo1_code_list_view_box">
+                        <img src="/개인프로젝트 - 코드리뷰3프로그래스바.4b0137a5.png" alt="">
+                        <img src="/개인프로젝트 - 코드리뷰3 소요된 시간.337457a5.png" alt="">
+                      </div>
+                      <p>
+                        1) 구현 된 화면 <br>
+                        2) 코드 리뷰 <br>
+                        audio 기능을 사용하여 음원을 들을 수 있도록 만들고, 프로그래스바 및 현재 시간 분,초를 계산하여 현재 음원 진행 상태를 구현하였습니다.
+                      </p>
+                    </div>
+
+                  </div> <!-- cont -->
+                </li>
+                <li>
+                  <a href="#tab2" class="btn btn2">
+                    <div class="postit_box postit_box2">
+                      <img class="postit" src="/포스트잇클립.7983f2c7.png" alt="1">
+                      <h3>기획서</h3>
+                    </div>
+                  </a>
+                  <div id="tab2" class="cont">
+
+                    <!-- Slider main container -->
+                    <div class="solo1_code_swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_01.89dc7a77.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_02.a50ac58c.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_03.88d476f1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_04.b55a477d.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_05.a4720a5a.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_06.93f8fe8b.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_07.9a215a78.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_08.f8a3fd5f.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_09.474b3fae.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_10.ef8a1e47.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_11.28a6937b.png" alt=""></div>
+                        <!-- <div class="swiper-slide"><img src="./img/코드리뷰,기획서/멜론/기획서/UIUX 콘셉트 기획(전율황)_페이지_12.png" alt=""></div> -->
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_13.c9ff3319.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/UIUX 콘셉트 기획(전율황)_페이지_14.c5c51cd4.png" alt=""></div>
+
+                      </div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                      <!-- If we need scrollbar -->
+                      <!-- <div class="swiper-scrollbar"></div> -->
+
+                       <div class="swiper-pagination"></div>
+                    </div>
+
+
+                  </div> <!-- cont -->
+                </li>
+                <li>
+                  <a href="#tab2" class="btn btn3">
+                    <div class="postit_box postit_box3">
+                      <img class="postit" src="/포스트잇클립.7983f2c7.png" alt="1">
+                      <h3>스케치</h3>
+                    </div>
+                  </a>
+                  <div id="tab3" class="cont">
+
+                    <div class="solo1_sketch_box">
+
+                      <h3>아이디어 스케치</h3>
+
+                      <div class="solo1_sketch_text">
+                        <p>반응형 홈페이지 제작 구상을 위해 먼저 아이디어 스케치를 통해 pc, tablet, mobile틀을 제작 하였습니다.</p>
+                      </div>
+
+                      <div class="solo1_sketch_pc">
+                        <img src="/아이디어스케치(전율황)_pc_메인페이지.61f59806.png" alt="">
+                        <img src="/아이디어스케치(전율황)_pc_서브페이지.405c3766.png" alt="">
+                      </div>
+                      <p>pc버전 아이디어 스케치입니다.</p>
+                      
+
+                    <div class="solo1_sketch_tablet">
+                      <img src="/아이디어스케치(전율황)_테블릿_메인페이지1.187c1800.png" alt="">
+                      <img src="/아이디어스케치(전율황)_테블릿_메인페이지2.5983bd74.png" alt="">
+                    </div>
+                    <p>tablet버전 아이디어 스케치입니다.</p>
+
+                    <div class="solo1_sketch_mobile">
+                      <img src="/아이디어스케치(전율황)_모바일_메인페이지.0de3b2d6.png" alt="">
+                      <img src="/아이디어스케치(전율황)_홈페이지_구상.e6caa7ed.png" alt="">
+                    </div>
+                    <p>mobile버전 및 전체구상 아이디어 스케치입니다.</p>
+
+                    </div>
+
+                  </div> <!-- cont -->
+                </li>
+                <li>
+                  <a href="#tab2" class="btn btn4">
+                    <div class="postit_box postit_box4">
+                      <img class="postit" src="/포스트잇클립.7983f2c7.png" alt="1">
+                      <h3>디자인</h3>
+                    </div>
+                  </a>
+                  <div id="tab4" class="cont">
+
+                    <div class="solo1_design_box">
+                      <h3>Ui 디자인</h3>
+
+                      <p class="solo1_design_text">아이디어 스케치 진행 후, adobe xd를 통하여 초기 디자인을 제작<br>
+                        반응형 홈페이지 -
+                        mobile(width 320~600), tablet(width 601 ~ 1024), pc(width 1025 ~ 1279, 1280 ~ )
+                        로 구성 하였습니다.</p>
+
+                      <h3>1. pc 화면 구성</h3>
+                      <div class="solo1_design_pc">
+                        <img src="/pc 메인페이지 호버, 체크 시 기능 , 테블릿과 동일.7a33aff2.jpg" alt="">
+                        <img src="/pc 서브페이지 1280 ~.ded29332.jpg" alt="">
+                      </div>
+                      <p>1)메인페이지
+                        2)서브페이지<br></p>
+
+                      <h3>2. tablet 화면 구성</h3>
+                      <div class="solo1_design_tablet">
+                        <img src="/테블릿 메인페이지 601~1024.1d5f26a5.jpg" alt="">
+                        <img src="/테블릿 서브 페이지 601~1024.ef45d519.jpg" alt="">
+                      </div>
+                      <p>1)메인페이지
+                        2)서브페이지<br>
+                      </p>
+
+                      <h3>3. mobile 화면 구성</h3>
+                      <div class="solo1_design_mobile">
+                        <img src="/모바일 메인페이지 320~600.d4ac47f7.jpg" alt="">
+                        <img src="/모바일 서브페이지 320~600.d503b11e.jpg" alt="">
+                        <img src="/모바일 좌측 상단 햄버거 메뉴.22f92eb6.jpg" alt="">
+                      </div>
+                      <p>1)메인페이지
+                        2)서브페이지
+                        3)햄버거메뉴<br>
+                      </p>
+
+
+                    </div> <!-- solo1_design_box -->
+
+                  </div> <!-- cont -->
+                </li>
+              </ul>
+            </div> <!-- 탭메뉴 -->
+
+          </div>
+
+        </div> 
+
+      </div> <!-- solo_project1_line -->
+
+
+    </div>
+
+    <div class="react_project1_box">
+      이건 리액트 박스
+    </div>
+
+    <div class="tim_project1_box">
+      이건 팀플 박스
+    </div>
+
+    <div class="login_project1_box">
+      이건 로그인 박스
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
