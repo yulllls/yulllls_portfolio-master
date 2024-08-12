@@ -1317,7 +1317,7 @@ body {
 .detail_project .project1_box .project1_line .project1_box_left img {
   width: 525px;
   /* height: 353px; */
-  height: 740px;
+  height: 715px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -1333,14 +1333,14 @@ body {
 .detail_project .project1_box .project1_line .project1_box_right strong {
   font-size: 25px;
 }
-.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list {
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list {
   display: flex;
   justify-content: flex-start;
   height: 75px;
   align-items: flex-end;
   margin-bottom: 30px;
 }
-.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list a {
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list a {
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -1350,12 +1350,12 @@ body {
   /* margin-bottom: 20px; */
   margin-right: 10px;
 }
-.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list a .sp_btn_all {
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list a .sp_btn_all {
   color: white;
   font-size: 20px;
   line-height: 47px;
 }
-.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list .sp_btn_all {
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list .sp_btn_all {
   width: 200px;
   height: 50px;
   background-color: #707070;
@@ -1368,8 +1368,12 @@ body {
   line-height: 47px;
   cursor: pointer;
 }
-.detail_project .project1_box .project1_line .project1_box_right .solo_project1_box_list .sp_btn_all:hover {
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list .solo_code_view:hover {
   background-color: #00CD3C;
+  color: white;
+}
+.detail_project .project1_box .project1_line .project1_box_right .project1_box_list .tim_code_view:hover {
+  background-color: #002053;
   color: white;
 }
 .detail_project .project1_box .project1_line .project1_box_right .swiper {
@@ -1393,7 +1397,10 @@ body {
 .detail_project .project1_box .project1_line .project1_box_right .swiper .swiper-pagination-bullet-active {
   background-color: #00CD3C;
 }
-.detail_project .project1_box .project1_line .solo_project1_code_container {
+.detail_project .project1_box .project1_line .project1_box_right .tim_project1_swiper .swiper-pagination-bullet-active {
+  background-color: #002053;
+}
+.detail_project .project1_box .project1_line .project1_code_container {
   width: 1260px;
   height: 80vh;
   position: absolute;
@@ -1401,10 +1408,10 @@ body {
   left: 0;
   /* overflow-y: scroll; */
 }
-.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box {
+.detail_project .project1_box .project1_line .project1_code_container .project1_code_box {
   position: relative;
 }
-.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return {
+.detail_project .project1_box .project1_line .project1_code_container .project1_code_box .project1_code_return {
   cursor: pointer;
   position: absolute;
   top: -62px;
@@ -1413,7 +1420,7 @@ body {
   font-weight: bold;
   font-family: "yg-jalnan";
 }
-.detail_project .project1_box .project1_line .solo_project1_code_container .solo_project1_code_box .solo_project1_code_return .fa-chevron-left {
+.detail_project .project1_box .project1_line .project1_code_container .project1_code_box .project1_code_return .fa-chevron-left {
   position: absolute;
   top: 1px;
   left: -19px;
@@ -1455,67 +1462,67 @@ body {
 }
 @keyframes anim-text-flow-keys {
   0% {
-    color: hsl(57, 60%, 60%);
+    color: hsl(105, 60%, 60%);
   }
   5% {
-    color: hsl(150, 60%, 60%);
+    color: hsl(149, 60%, 60%);
   }
   10% {
-    color: hsl(214, 60%, 60%);
+    color: hsl(53, 60%, 60%);
   }
   15% {
-    color: hsl(200, 60%, 60%);
+    color: hsl(129, 60%, 60%);
   }
   20% {
-    color: hsl(134, 60%, 60%);
+    color: hsl(160, 60%, 60%);
   }
   25% {
-    color: hsl(261, 60%, 60%);
+    color: hsl(225, 60%, 60%);
   }
   30% {
-    color: hsl(179, 60%, 60%);
+    color: hsl(312, 60%, 60%);
   }
   35% {
-    color: hsl(267, 60%, 60%);
+    color: hsl(225, 60%, 60%);
   }
   40% {
-    color: hsl(145, 60%, 60%);
+    color: hsl(271, 60%, 60%);
   }
   45% {
-    color: hsl(226, 60%, 60%);
+    color: hsl(310, 60%, 60%);
   }
   50% {
-    color: hsl(347, 60%, 60%);
+    color: hsl(91, 60%, 60%);
   }
   55% {
-    color: hsl(142, 60%, 60%);
+    color: hsl(192, 60%, 60%);
   }
   60% {
-    color: hsl(141, 60%, 60%);
+    color: hsl(211, 60%, 60%);
   }
   65% {
-    color: hsl(321, 60%, 60%);
+    color: hsl(249, 60%, 60%);
   }
   70% {
-    color: hsl(93, 60%, 60%);
+    color: hsl(153, 60%, 60%);
   }
   75% {
-    color: hsl(62, 60%, 60%);
+    color: hsl(341, 60%, 60%);
   }
   80% {
-    color: hsl(70, 60%, 60%);
+    color: hsl(51, 60%, 60%);
   }
   85% {
-    color: hsl(2, 60%, 60%);
+    color: hsl(184, 60%, 60%);
   }
   90% {
-    color: hsl(285, 60%, 60%);
+    color: hsl(311, 60%, 60%);
   }
   95% {
-    color: hsl(42, 60%, 60%);
+    color: hsl(187, 60%, 60%);
   }
   100% {
-    color: hsl(240, 60%, 60%);
+    color: hsl(101, 60%, 60%);
   }
 }
 .moment_h2 span:nth-of-type(1),
@@ -1919,67 +1926,67 @@ body {
   animation-delay: 0s;
 }
 
-.solo_project1_tab_menu {
+.project1_tab_menu {
   /*     position: absolute; */
   position: relative;
 }
-.solo_project1_tab_menu .list {
+.project1_tab_menu .list {
   /*      display: flex;
        justify-content: center;
   */
 }
-.solo_project1_tab_menu .list .is_on a {
+.project1_tab_menu .list .is_on a {
   color: #00CD3C;
 }
-.solo_project1_tab_menu .list .is_on a p {
+.project1_tab_menu .list .is_on a p {
   font-size: 20px;
   font-weight: bold;
 }
-.solo_project1_tab_menu .list .is_on .cont {
+.project1_tab_menu .list .is_on .cont {
   /*  display: block; 디스플레이 블럭 논을 쓰면 랭킹 오류생김*/
   opacity: 1;
   display: block;
 }
-.solo_project1_tab_menu .list li {
+.project1_tab_menu .list li {
   margin-right: 20px;
 }
-.solo_project1_tab_menu .list li a {
+.project1_tab_menu .list li a {
   position: relative;
   color: black;
   display: block;
 }
-.solo_project1_tab_menu .list li a .postit_box {
+.project1_tab_menu .list li a .postit_box {
   top: 0;
   left: -70px;
   position: absolute;
   z-index: 20;
 }
-.solo_project1_tab_menu .list li a .postit_box .postit {
+.project1_tab_menu .list li a .postit_box .postit {
   width: 160px;
   height: 50px;
 }
-.solo_project1_tab_menu .list li a .postit_box h3 {
+.project1_tab_menu .list li a .postit_box h3 {
   position: absolute;
   top: 13px;
   left: 53px;
 }
-.solo_project1_tab_menu .list li a .postit_box1 {
+.project1_tab_menu .list li a .postit_box1 {
   top: 18px;
 }
-.solo_project1_tab_menu .list li a .postit_box2 {
+.project1_tab_menu .list li a .postit_box2 {
   top: 73px;
 }
-.solo_project1_tab_menu .list li a .postit_box3 {
+.project1_tab_menu .list li a .postit_box3 {
   top: 128px;
 }
-.solo_project1_tab_menu .list li a .postit_box4 {
+.project1_tab_menu .list li a .postit_box4 {
   top: 183px;
 }
-.solo_project1_tab_menu .list li a .postit_box:hover {
+.project1_tab_menu .list li a .postit_box:hover {
   scale: 1.1;
   z-index: 5;
 }
-.solo_project1_tab_menu .list li .cont {
+.project1_tab_menu .list li .cont {
   /* display: none; */
   opacity: 0;
   position: absolute;
@@ -1991,7 +1998,7 @@ body {
   height: 77vh;
   display: none;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper {
+.project1_tab_menu .list li .cont .code_swiper {
   /*   width: 1100px;
     margin: 0 auto; */
   width: 100%;
@@ -1999,7 +2006,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-slide {
+.project1_tab_menu .list li .cont .code_swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -2007,128 +2014,132 @@ body {
   justify-content: center;
   align-items: center;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-slide img {
+.project1_tab_menu .list li .cont .code_swiper .swiper-slide img {
   display: block;
   width: 1100px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-button-prev {
+.project1_tab_menu .list li .cont .code_swiper .swiper-button-prev {
   color: #00CD3C;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-button-next {
+.project1_tab_menu .list li .cont .code_swiper .swiper-button-next {
   color: #00CD3C;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-horizontal > .swiper-pagination-progressbar, .solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-pagination-progressbar.swiper-pagination-horizontal, .solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.project1_tab_menu .list li .cont .code_swiper .swiper-horizontal > .swiper-pagination-progressbar, .project1_tab_menu .list li .cont .code_swiper .swiper-pagination-progressbar.swiper-pagination-horizontal, .project1_tab_menu .list li .cont .code_swiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .project1_tab_menu .list li .cont .code_swiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 1100px;
   bottom: 40px;
   top: auto;
   left: 50%;
   transform: translateX(-50%);
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.project1_tab_menu .list li .cont .code_swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #00CD3C;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view {
+.project1_tab_menu .list li .cont .code_list_view {
   margin-bottom: 40px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view h3 {
+.project1_tab_menu .list li .cont .code_list_view h3 {
   margin-bottom: 10px;
   font-size: 23px;
   font-family: "yg-jalnan";
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view img {
+.project1_tab_menu .list li .cont .code_list_view img {
   width: 1050px;
   height: auto;
   margin-top: 10px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view .solo1_code_list_view_box {
+.project1_tab_menu .list li .cont .code_list_view .code_list_view_box {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view .solo1_code_list_view_box img {
+.project1_tab_menu .list li .cont .code_list_view .code_list_view_box img {
   width: 520px;
   height: 350px;
   margin-right: 10px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_code_list_view p {
+.project1_tab_menu .list li .cont .code_list_view p {
   margin-top: 10px;
   line-height: 20px;
   font-weight: bold;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box h3 {
+.project1_tab_menu .list li .cont .sketch_box h3 {
   margin-bottom: 10px;
   font-size: 23px;
   font-family: "yg-jalnan";
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_text p {
+.project1_tab_menu .list li .cont .sketch_box .sketch_text p {
   font-weight: bold;
   font-size: 20px;
   margin-top: -5px;
   margin-bottom: 30px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box p {
+.project1_tab_menu .list li .cont .sketch_box p {
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 10px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_pc {
+.project1_tab_menu .list li .cont .sketch_box .sketch_pc {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_pc img {
+.project1_tab_menu .list li .cont .sketch_box .sketch_pc img {
   width: 540px;
   height: auto;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_tablet {
+.project1_tab_menu .list li .cont .sketch_box .sketch_tablet {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_tablet img {
+.project1_tab_menu .list li .cont .sketch_box .sketch_tablet img {
   width: 540px;
   height: auto;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_mobile {
+.project1_tab_menu .list li .cont .sketch_box .sketch_mobile {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_sketch_box .solo1_sketch_mobile img {
+.project1_tab_menu .list li .cont .sketch_box .sketch_mobile img {
   width: 540px;
   height: auto;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box h3 {
+.project1_tab_menu .list li .cont .design_box h3 {
   margin-bottom: 10px;
   font-size: 23px;
   font-family: "yg-jalnan";
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box p {
+.project1_tab_menu .list li .cont .design_box p {
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 10px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_text {
+.project1_tab_menu .list li .cont .design_box .design_text {
   font-size: 20px;
   margin-top: -5px;
   margin-bottom: 30px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_pc {
+.project1_tab_menu .list li .cont .design_box .design_pc s {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_pc img {
+.project1_tab_menu .list li .cont .design_box .design_pc s img {
   width: 520px;
   height: auto;
   margin-right: 15px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_tablet {
+.project1_tab_menu .list li .cont .design_box .design_tablet {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_tablet img {
+.project1_tab_menu .list li .cont .design_box .design_tablet img {
   width: 520px;
   height: 1000px;
   margin-right: 15px;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_mobile {
+.project1_tab_menu .list li .cont .design_box .design_mobile {
   display: flex;
 }
-.solo_project1_tab_menu .list li .cont .solo1_design_box .solo1_design_mobile img {
+.project1_tab_menu .list li .cont .design_box .design_mobile img {
   width: 350px;
   height: 1000px;
   margin-right: 15px;
+}
+
+.tim_project1_tab_menu .list .is_on a {
+  color: #002053;
 }/*# sourceMappingURL=style.css.map */

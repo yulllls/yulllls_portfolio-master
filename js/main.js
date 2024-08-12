@@ -702,6 +702,41 @@ function SwiperSolo1() {
 
 SwiperSolo1();
 
+function SwiperTim1() {
+
+  const swiper = new Swiper('.tim_project1_swiper', {
+
+    loop: true,
+    /* loopedSlides: 1, */
+
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: '3',
+
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.tim_project1_swiper .swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+
+  });
+}
+
+SwiperTim1();
+
 $('.moment_h2').html(function (i, html) {
   var chars = $.trim(html).split("");
 
@@ -768,17 +803,24 @@ replayIco.addEventListener('click', () => {
 });
 
 
-const timProject1BoxLeft = document.querySelector('.tim_project1_box_left')
-const timProject1BoxRight = document.querySelector('.tim_project1_box_left')
+
 
 const soloProject1BoxLeft = document.querySelector('.solo_project1_box_left')
 const soloProject1BoxRight = document.querySelector('.solo_project1_box_right')
 const soloCodeView = document.querySelectorAll('.solo_code_view')
+
+const timProject1BoxLeft = document.querySelector('.tim_project1_box_left')
+const timProject1BoxRight = document.querySelector('.tim_project1_box_right')
+const timCodeView = document.querySelectorAll('.tim_code_view')
+
 const soloProject1CodeContainer = document.querySelector('.solo_project1_code_container')
+const timProject1CodeContainer = document.querySelector('.tim_project1_code_container')
 
 const soloProject1CodeReturn = document.querySelector('.solo_project1_code_return')
+const timProject1CodeReturn = document.querySelector('.tim_project1_code_return')
 
 soloProject1CodeContainer.style.display = 'none'
+timProject1CodeContainer.style.display = 'none'
 
 soloCodeView.forEach(soloCodeViewAll => {
 
@@ -792,6 +834,18 @@ soloCodeView.forEach(soloCodeViewAll => {
   })
 })
 
+timCodeView.forEach(timCodeViewAll => {
+
+  timCodeViewAll.addEventListener('click', () => {
+    console.log("코드리뷰 버튼을 클릭합니다")
+    timProject1BoxLeft.style.visibility = 'hidden'
+    timProject1BoxRight.style.visibility = 'hidden'
+    timProject1CodeContainer.style.display = 'block'
+    console.log("정상작동시,개인프로젝트 박스 왼쪽 오른쪽을 히든처리, 코드 컨테이너의 디스플레이가 블럭처리됩니다 ")
+
+  })
+})
+
 
 soloProject1CodeReturn.addEventListener('click', () => {
   soloProject1CodeContainer.style.display = 'none'
@@ -799,6 +853,14 @@ soloProject1CodeReturn.addEventListener('click', () => {
   soloProject1BoxRight.style.visibility = 'visible'
 
 })
+
+timProject1CodeReturn.addEventListener('click', () => {
+  timProject1CodeContainer.style.display = 'none'
+  timProject1BoxLeft.style.visibility = 'visible'
+  timProject1BoxRight.style.visibility = 'visible'
+
+})
+
 
 soloExit.addEventListener('click', () => {
   solodetailProject.style.visibility = 'hidden'
@@ -814,7 +876,7 @@ timExit.addEventListener('click', () => {
   timProject.style.visibility = 'hidden'
   timProject1BoxLeft.style.visibility = 'hidden'
   timProject1BoxRight.style.visibility = 'hidden'
-  /* timProject1CodeContainer.style.display = 'none' */
+  timProject1CodeContainer.style.display = 'none'
   document.body.style.overflow = ''
 })
 
@@ -833,6 +895,7 @@ for (let i = 0; i < tabList.length; i++) {
   })
 
 }
+
 
 function solo1CodeSwiper() {
 
@@ -858,6 +921,43 @@ function solo1CodeSwiper() {
 solo1CodeSwiper();
 
 
+const timtabList = document.querySelectorAll('.tim_project1_tab_menu .list li');
+
+for (let i = 0; i < timtabList.length; i++) {
+  let btn = timtabList[i].querySelector('.btn')
+  btn.addEventListener('click', function (event) {
+    event.preventDefault();
+    for (let j = 0; j < timtabList.length; j++) {
+      timtabList[j].classList.remove('is_on');
+      console.log("탭메뉴 실행")
+    }
+    this.parentNode.classList.add('is_on');
+  })
+
+}
+
+function timCodeSwiper() {
+
+  const swiper = new Swiper('.tim_code_swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.tim_code_swiper .swiper-button-next',
+      prevEl: '.tim_code_swiper .swiper-button-prev',
+    },
+
+    pagination: {
+      el: ".tim_code_swiper .swiper-pagination",
+      type: "progressbar",
+    },
+  });
+
+}
+
+timCodeSwiper();
 
 
 AOS.init();

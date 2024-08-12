@@ -1693,7 +1693,7 @@ body {
 
           width: 525px;
           /* height: 353px; */
-          height: 740px;
+          height: 715px;
           margin-top: 15px;
           margin-bottom: 15px;
 
@@ -1715,7 +1715,7 @@ body {
           font-size: 25px;
         }
 
-        .solo_project1_box_list {
+        .project1_box_list /* solo_project1_box_list */ {
           display: flex;
           justify-content: flex-start;
           height: 75px;
@@ -1759,8 +1759,13 @@ body {
           }
 
 
-          .sp_btn_all:hover {
+          .solo_code_view:hover {
             background-color: #00CD3C;
+            color: white;
+          }
+
+          .tim_code_view:hover {
+            background-color: #002053;
             color: white;
           }
 
@@ -1792,14 +1797,24 @@ body {
           .swiper-pagination-bullet-active {
             background-color: #00CD3C;
           }
+          
+
+
+   
+        }
+        .tim_project1_swiper{
+          .swiper-pagination-bullet-active{
+            background-color: #002053;
+          }
         }
 
+ 
 
 
 
       }
 
-      .solo_project1_code_container {
+      .project1_code_container /* solo_project1_code_container */  {
         width: 1260px;
         height: 80vh;
         position: absolute;
@@ -1808,11 +1823,11 @@ body {
         /* overflow-y: scroll; */
 
 
-        .solo_project1_code_box {
+        .project1_code_box /* solo_project1_code_box */ {
 
           position: relative;
 
-          .solo_project1_code_return {
+          .project1_code_return /* solo_project1_code_return */ {
             cursor: pointer;
             position: absolute;
             top: -62px;
@@ -1913,7 +1928,7 @@ body {
 }
 
 
-.solo_project1_tab_menu {
+.project1_tab_menu /* solo_project1_tab_menu */ {
   /*     position: absolute; */
   position: relative;
 
@@ -2006,7 +2021,7 @@ body {
         display: none;
 
 
-        .solo1_code_swiper {
+        .code_swiper /* solo1_code_swiper */ {
           /*   width: 1100px;
             margin: 0 auto; */
           width: 100%;
@@ -2058,7 +2073,7 @@ body {
 
 
 
-        .solo1_code_list_view {
+        .code_list_view /* solo1_code_list_view */ {
           margin-bottom: 40px;
 
           h3 {
@@ -2073,7 +2088,7 @@ body {
             margin-top: 10px;
           }
 
-          .solo1_code_list_view_box {
+          .code_list_view_box /* solo1_code_list_view_box */ {
             display: flex;
 
             img {
@@ -2090,7 +2105,7 @@ body {
           }
         }
 
-        .solo1_sketch_box {
+        .sketch_box /* solo1_sketch_box */ {
 
           h3 {
             margin-bottom: 10px;
@@ -2098,7 +2113,7 @@ body {
             font-family: "yg-jalnan";
           }
 
-          .solo1_sketch_text {
+          .sketch_text /* solo1_sketch_text */ {
             p {
               font-weight: bold;
               font-size: 20px;
@@ -2113,7 +2128,7 @@ body {
             margin-top: 10px;
           }
 
-          .solo1_sketch_pc {
+          .sketch_pc /* solo1_sketch_pc */ {
             display: flex;
 
             img {
@@ -2122,7 +2137,7 @@ body {
             }
           }
 
-          .solo1_sketch_tablet {
+          .sketch_tablet /* solo1_sketch_tablet */ {
             display: flex;
 
             img {
@@ -2131,7 +2146,7 @@ body {
             }
           }
 
-          .solo1_sketch_mobile {
+          .sketch_mobile /* solo1_sketch_mobile */ {
             display: flex;
 
             img {
@@ -2142,7 +2157,7 @@ body {
 
         }
 
-        .solo1_design_box {
+        .design_box /* solo1_design_box */ {
 
           h3 {
             margin-bottom: 10px;
@@ -2157,13 +2172,13 @@ body {
             margin-top: 10px;
           }
 
-          .solo1_design_text {
+          .design_text /* solo1_design_text */ {
             font-size: 20px;
             margin-top: -5px;
             margin-bottom: 30px;
           }
 
-          .solo1_design_pc {
+          .design_pc s/* olo1_design_pc */ {
             display: flex;
 
             img {
@@ -2173,7 +2188,7 @@ body {
             }
           }
 
-          .solo1_design_tablet {
+          .design_tablet /* solo1_design_tablet */ {
             display: flex;
 
             img {
@@ -2183,7 +2198,7 @@ body {
             }
           }
 
-          .solo1_design_mobile {
+          .design_mobile /* solo1_design_mobile */ {
             display: flex;
 
             img {
@@ -2202,5 +2217,16 @@ body {
 
   }
 
+
+}
+
+.tim_project1_tab_menu{
+  .list {
+    .is_on {
+      a {
+        color: #002053;
+      }
+    }
+  }
 
 }
