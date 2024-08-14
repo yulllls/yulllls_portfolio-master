@@ -2069,7 +2069,22 @@ body {
       
         }
 
-  
+        .tim_code_swiper{
+          
+            .swiper-button-prev {
+              color: #002053;
+            }
+    
+            .swiper-button-next {
+              color: #002053;
+            }
+    
+            .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+              background-color: #002053;
+            }
+          }
+         
+         
 
 
 
@@ -2157,6 +2172,28 @@ body {
 
         }
 
+        .tim_sketch_box{
+          .tim_sketch_pc{
+            display: block;
+            img{
+              margin-bottom: 5px;
+            }
+
+          }
+          .tim_sketch_tablet{
+            img{
+              margin-right: 5px;
+              margin-bottom: 5px;
+            }
+          }
+          .tim_sketch_mobile{
+            img{
+              margin-right: 5px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+
         .design_box /* solo1_design_box */ {
 
           h3 {
@@ -2178,13 +2215,21 @@ body {
             margin-bottom: 30px;
           }
 
-          .design_pc s/* olo1_design_pc */ {
+          .design_pc /* olo1_design_pc */ {
             display: flex;
 
             img {
               width: 520px;
               height: auto;
               margin-right: 15px;
+            }
+          }
+
+          .tim_design_pc{
+            display: block;
+            img{
+              width: 98%;
+              margin-bottom: 15px;
             }
           }
 
@@ -2212,6 +2257,7 @@ body {
 
       }
 
+  
 
     }
 
