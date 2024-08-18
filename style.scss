@@ -2120,6 +2120,15 @@ body {
           }
         }
 
+        .tim_img_view_box{
+          display: flex;
+          img{
+            width: 520px;
+            height: 350px;
+            margin-right: 10px;
+          }
+        }
+
         .sketch_box /* solo1_sketch_box */ {
 
           h3 {

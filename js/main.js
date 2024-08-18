@@ -635,17 +635,23 @@ const loginReadMore = document.querySelector('.login_project1-1 .read_more')
 const detailProject = document.querySelector('.detail_project')
 const solodetailProject = document.querySelector('.solo_detail_project')
 const timdetailProject = document.querySelector('.tim_detail_project')
+const logindetailProject = document.querySelector('.login_detail_project')
+const reactdetailProject = document.querySelector('.react_detail_project')
 
 const projectPage = document.querySelector('.project_Page')
 const projectPageBox = document.querySelector('.project_page_box')
 
 const soloExit = document.querySelector('.solo_exit')
 const timExit = document.querySelector('.tim_exit')
+const loginExit = document.querySelector('.login_exit')
 
 let reactReadMoreClick = false;
 detailProject.style.visibility = 'hidden'
 solodetailProject.style.visibility = 'hidden'
 timdetailProject.style.visibility = 'hidden'
+logindetailProject.style.visibility = 'hidden'
+reactdetailProject.style.visibility = 'hidden'
+
 
 soloReadMore.addEventListener('click', (event) => {
   event.preventDefault();
@@ -665,6 +671,14 @@ timReadMore.addEventListener('click', (event) => {
   document.body.style.overflow = 'hidden'
 })
 
+loginReadMore.addEventListener('click', (event) => {
+  event.preventDefault();
+  logindetailProject.style.visibility = 'visible'
+  loginProject.style.visibility = 'visible'
+  loginProject1BoxLeft.style.visibility = 'visible'
+  loginProject1BoxRight.style.visibility = 'visible'
+  document.body.style.overflow = 'hidden'
+})
 
 
 function SwiperSolo1() {
@@ -736,6 +750,41 @@ function SwiperTim1() {
 }
 
 SwiperTim1();
+
+function Swiperlogin() {
+
+  const swiper = new Swiper('.login_project1_swiper', {
+
+    loop: true,
+    /* loopedSlides: 1, */
+
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: '3',
+
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.tim_project1_swiper .swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+
+  });
+}
+
+Swiperlogin();
 
 $('.moment_h2').html(function (i, html) {
   var chars = $.trim(html).split("");
@@ -813,14 +862,22 @@ const timProject1BoxLeft = document.querySelector('.tim_project1_box_left')
 const timProject1BoxRight = document.querySelector('.tim_project1_box_right')
 const timCodeView = document.querySelectorAll('.tim_code_view')
 
+const loginProject1BoxLeft = document.querySelector('.login_project1_box_left')
+const loginProject1BoxRight = document.querySelector('.login_project1_box_right')
+const loginCodeView = document.querySelectorAll('.login_code_view')
+
+
 const soloProject1CodeContainer = document.querySelector('.solo_project1_code_container')
 const timProject1CodeContainer = document.querySelector('.tim_project1_code_container')
+const loginProject1CodeContainer = document.querySelector('.login_project1_code_container')
 
 const soloProject1CodeReturn = document.querySelector('.solo_project1_code_return')
 const timProject1CodeReturn = document.querySelector('.tim_project1_code_return')
+const loginProject1CodeReturn = document.querySelector('.login_project1_code_return')
 
 soloProject1CodeContainer.style.display = 'none'
 timProject1CodeContainer.style.display = 'none'
+loginProject1CodeContainer.style.display = 'none'
 
 soloCodeView.forEach(soloCodeViewAll => {
 
@@ -877,6 +934,15 @@ timExit.addEventListener('click', () => {
   timProject1BoxLeft.style.visibility = 'hidden'
   timProject1BoxRight.style.visibility = 'hidden'
   timProject1CodeContainer.style.display = 'none'
+  document.body.style.overflow = ''
+})
+
+loginExit.addEventListener('click', () => {
+  logindetailProject.style.visibility = 'hidden'
+  loginProject.style.visibility = 'hidden'
+  loginProject1BoxLeft.style.visibility = 'hidden'
+  loginProject1BoxRight.style.visibility = 'hidden'
+  loginProject1CodeContainer.style.display = 'none'
   document.body.style.overflow = ''
 })
 
