@@ -232,6 +232,13 @@ window.addEventListener('scroll', () => {
   
     }
 
+    if (window.scrollY >= 7800) {
+      contact.style.color = 'red'
+      project.style.color = ''
+    } else {
+      contact.style.color = ''
+    }
+
 });
 
 

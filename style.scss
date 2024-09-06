@@ -1672,6 +1672,10 @@ body {
       .tim_project1_box_h2{
         background-color:#002053;
       }
+      
+      .login_project1_box_h2{
+        background-color:#707070;
+      }
 
       .exit /* solo_exit */ {
         position: absolute;
@@ -1758,6 +1762,12 @@ body {
             cursor: pointer;
           }
 
+          .login_progect_a_box{
+            width: 300px;
+            .sp_btn_all{
+              width: 300px;
+            }
+          }
 
           .solo_code_view:hover {
             background-color: #00CD3C;
