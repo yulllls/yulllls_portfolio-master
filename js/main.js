@@ -232,7 +232,7 @@ window.addEventListener('scroll', () => {
   
     }
 
-    if (window.scrollY >= 7800) {
+    if (window.scrollY >= 7750) {
       contact.style.color = 'red'
       project.style.color = ''
     } else {
