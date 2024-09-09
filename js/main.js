@@ -273,9 +273,9 @@ window.addEventListener('scroll', function () {
     // Animate the progress bars
     document.querySelector('.progress1').style.width = '85%';
     document.querySelector('.progress2').style.width = '85%';
-    document.querySelector('.progress3').style.width = '65%';
+    document.querySelector('.progress3').style.width = '70%';
     /* document.querySelector('.progress4').style.width = '40%'; */
-    document.querySelector('.progress5').style.width = '60%';
+    document.querySelector('.progress5').style.width = '65%';
     document.querySelector('.progress6').style.width = '70%';
 
     LanguageText.style.color = 'white'
