@@ -1,13 +1,15 @@
 console.log(document.documentElement.scrollHeight);
 
+document.addEventListener("DOMContentLoaded", ()=> {
+
+	console.log("불러오기 테스트")
+});
+
+console.warn = function() {};
 
 const lnbTime = document.querySelector('.time li')
 
-/* setInterval(() => {
-  const time = new Date();
-  lnbTime.innerHTML = time.toLocaleString();
-}, 1000)
-  */
+
 
 window.addEventListener('scroll', function () {
   var scrollPosition = window.scrollY;
@@ -662,6 +664,7 @@ reactdetailProject.style.visibility = 'hidden'
 
 soloReadMore.addEventListener('click', (event) => {
   event.preventDefault();
+  solodetailProject.style.display = 'block'
   solodetailProject.style.visibility = 'visible'
   soloProject.style.visibility = 'visible'
   soloProject1BoxLeft.style.visibility = 'visible'
@@ -671,6 +674,7 @@ soloReadMore.addEventListener('click', (event) => {
 
 timReadMore.addEventListener('click', (event) => {
   event.preventDefault();
+  timdetailProject.style.display = 'block'
   timdetailProject.style.visibility = 'visible'
   timProject.style.visibility = 'visible'
   timProject1BoxLeft.style.visibility = 'visible'
@@ -680,185 +684,13 @@ timReadMore.addEventListener('click', (event) => {
 
 loginReadMore.addEventListener('click', (event) => {
   event.preventDefault();
+  logindetailProject.style.display = 'block'
   logindetailProject.style.visibility = 'visible'
   loginProject.style.visibility = 'visible'
   loginProject1BoxLeft.style.visibility = 'visible'
   loginProject1BoxRight.style.visibility = 'visible'
   document.body.style.overflow = 'hidden'
 })
-
-
-function SwiperSolo1() {
-
-  const swiper = new Swiper('.solo_project1_swiper', {
-
-    loop: true,
-    /* loopedSlides: 1, */
-
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: '3',
-
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-
-    // If we need pagination
-    pagination: {
-      el: '.solo_project1_swiper .swiper-pagination',
-    },
-
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-
-  });
-}
-
-SwiperSolo1();
-
-function SwiperTim1() {
-
-  const swiper = new Swiper('.tim_project1_swiper', {
-
-    loop: true,
-    /* loopedSlides: 1, */
-
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: '3',
-
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-
-    // If we need pagination
-    pagination: {
-      el: '.tim_project1_swiper .swiper-pagination',
-    },
-
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-
-  });
-}
-
-SwiperTim1();
-
-function Swiperlogin() {
-
-  const swiper = new Swiper('.login_project1_swiper', {
-
-    loop: true,
-    /* loopedSlides: 1, */
-
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: '3',
-
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-
-    // If we need pagination
-    pagination: {
-      el: '.tim_project1_swiper .swiper-pagination',
-    },
-
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-
-  });
-}
-
-Swiperlogin();
-
-$('.moment_h2').html(function (i, html) {
-  var chars = $.trim(html).split("");
-
-  return '<span>' + chars.join('</span><span>') + '</span>';
-});
-
-function profile_swiper() {
-
-
-  const swiper = new Swiper(".profile_swiper", {
-    direction: "horizontal",
-    loop: true,
-
-    effect: 'cards',
-    grabCursor: true,
-
-  });
-
-}
-profile_swiper();
-
-
-
-const introVideoReplayImg = document.querySelector('.intro_video_replay_img')
-const replayIco = document.querySelector('.replay_ico')
-
-
-introVideoReplayImg.addEventListener('mouseover', () => {
-  introVideoReplayImg.src = './img/본인/인트로영상다시보기호버.gif'
-})
-
-introVideoReplayImg.addEventListener('mouseout', () => {
-  introVideoReplayImg.src = "./img/본인/인트로영상다시보기2.png"
-})
-
-
-introVideoReplayImg.addEventListener('click', () => {
-  console.log('이미지를 통해 영상을 다시 클릭')
-  introVideo.classList.remove("fade-out");
-  introVideo.style.display = "block";
-  introVideoElement.currentTime = 0;
-  document.body.style.overflow = 'hidden';
-
-  videoTimer = setTimeout(() => {
-    introVideo.classList.add("fade-out");
-    console.log('이미지를 통해 클릭된 영상 마무리')
-
-  }, 7700);
-
-});
-
-replayIco.addEventListener('click', () => {
-  console.log('아이콘을 통해 영상을 다시 클릭')
-  introVideo.classList.remove("fade-out");
-  introVideo.style.display = "block";
-  introVideoElement.currentTime = 0;
-  document.body.style.overflow = 'hidden';
-
-  videoTimer = setTimeout(() => {
-    introVideo.classList.add("fade-out");
-    console.log('아이콘을 통해 클릭된 영상 마무리')
- 
-  }, 7700);
-});
-
-
 
 
 const soloProject1BoxLeft = document.querySelector('.solo_project1_box_left')
@@ -1031,6 +863,194 @@ function timCodeSwiper() {
 }
 
 timCodeSwiper();
+
+
+function SwiperSolo1() {
+
+  const swiper = new Swiper('.solo_project1_swiper', {
+
+    loop: true,
+    /* loopedSlides: 1, */
+
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: '3',
+    observer: true,
+    observeParents: true,
+    /* observer: true,
+    observeParents: true,
+    위 두 옵션은 부모요소를 감지하여 자동업데이트
+    >디스플레이 none block 상황에서도 실시간 사용가능 */
+
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.solo_project1_swiper .swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+
+  });
+}
+
+SwiperSolo1();
+
+function SwiperTim1() {
+
+  const swiper = new Swiper('.tim_project1_swiper', {
+
+    loop: true,
+    /* loopedSlides: 1, */
+
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: '3',
+    observer: true,
+    observeParents: true,
+
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.tim_project1_swiper .swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+
+  });
+}
+
+SwiperTim1();
+
+function Swiperlogin() {
+
+  const swiper = new Swiper('.login_project1_swiper', {
+
+    loop: true,
+    /* loopedSlides: 1, */
+    
+
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: '3',
+    observer: true,
+    observeParents: true,
+ 
+
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.tim_project1_swiper .swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+
+  });
+}
+
+Swiperlogin();
+
+$('.moment_h2').html(function (i, html) {
+  var chars = $.trim(html).split("");
+
+  return '<span>' + chars.join('</span><span>') + '</span>';
+});
+
+function profile_swiper() {
+
+
+  const swiper = new Swiper(".profile_swiper", {
+    direction: "horizontal",
+    loop: true,
+
+    effect: 'cards',
+    grabCursor: true,
+
+  });
+
+}
+profile_swiper();
+
+
+
+const introVideoReplayImg = document.querySelector('.intro_video_replay_img')
+const replayIco = document.querySelector('.replay_ico')
+
+
+introVideoReplayImg.addEventListener('mouseover', () => {
+  introVideoReplayImg.src = './img/본인/인트로영상다시보기호버.gif'
+})
+
+introVideoReplayImg.addEventListener('mouseout', () => {
+  introVideoReplayImg.src = "./img/본인/인트로영상다시보기2.png"
+})
+
+
+introVideoReplayImg.addEventListener('click', () => {
+  console.log('이미지를 통해 영상을 다시 클릭')
+  introVideo.classList.remove("fade-out");
+  introVideo.style.display = "block";
+  introVideoElement.currentTime = 0;
+  document.body.style.overflow = 'hidden';
+
+  videoTimer = setTimeout(() => {
+    introVideo.classList.add("fade-out");
+    console.log('이미지를 통해 클릭된 영상 마무리')
+
+  }, 7700);
+
+});
+
+replayIco.addEventListener('click', () => {
+  console.log('아이콘을 통해 영상을 다시 클릭')
+  introVideo.classList.remove("fade-out");
+  introVideo.style.display = "block";
+  introVideoElement.currentTime = 0;
+  document.body.style.overflow = 'hidden';
+
+  videoTimer = setTimeout(() => {
+    introVideo.classList.add("fade-out");
+    console.log('아이콘을 통해 클릭된 영상 마무리')
+ 
+  }, 7700);
+});
+
+
+
+
+
 
 
 AOS.init();

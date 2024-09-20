@@ -222,8 +222,8 @@ body {
           position: absolute;
           width: 30px;
           height: 30px;
-          bottom: 3px;
-          right: 12px;
+          bottom: 37px;
+          right: 32px;
           /*  margin-top: -20px; */
         }
       }
@@ -1592,6 +1592,7 @@ body {
 }
 
 .detail_project {
+  display: none;
   position: fixed;
   width: 100%;
   margin: 0 auto;
@@ -1859,6 +1860,7 @@ body {
         }
       }
 
+
     }
 
   }
@@ -1879,13 +1881,6 @@ body {
 
 }
 
-/* .solo_detail_project{
-  position: fixed;
-} */
-
-/* .tim_detail_project{
-  position: fixed;
-} */
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
 
