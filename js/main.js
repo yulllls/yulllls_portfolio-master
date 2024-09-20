@@ -287,7 +287,12 @@ window.addEventListener('scroll', function () {
     FrameWorkText2.style.color = 'white'
     skillPageH2.style.backgroundColor = 'rgba(255, 255, 255, 20%)'
     /* skillPageH2.style.color = 'black' */
-
+    htmlBoxText.style.color = 'white'
+    cssBoxText.style.color = 'white'
+    jsBoxText.style.color = 'white'
+    jqueryBoxText.style.color = 'white'
+    scssBoxText.style.color = 'white'
+ 
 
     gitImg.style.filter = 'invert(100%)'
     gitHubImg.style.filter = 'invert(100%)'
@@ -352,10 +357,105 @@ window.addEventListener('scroll', function () {
     gitImg.style.filter = ''
     gitHubImg.style.filter = ''
 
+   htmlBoxText.style.color = ''
+   cssBoxText.style.color = ''
+   jsBoxText.style.color = ''
+   jqueryBoxText.style.color = ''
+   scssBoxText.style.color = ''
+
   }
 
 });
 
+
+const htmlBox = document.querySelector('.html')
+const htmlBoxText = document.querySelector('.html_box_text')
+
+const cssBox = document.querySelector('.css')
+const cssBoxText = document.querySelector('.css_box_text')
+
+const jsBox = document.querySelector('.js')
+const jsBoxText = document.querySelector('.js_box_text')
+
+const jqueryBox = document.querySelector('.jquery')
+const jqueryBoxText = document.querySelector('.jquery_box_text')
+
+const scssBox = document.querySelector('.scss')
+const scssBoxText = document.querySelector('.scss_box_text')
+
+const progress1 = document.querySelector('.html .progress-bar')
+const progress2 = document.querySelector('.css .progress-bar')
+const progress3 = document.querySelector('.js .progress-bar')
+const progress4 = document.querySelector('.jquery .progress-bar')
+const progress5 = document.querySelector('.scss .progress-bar')
+
+const num1 = document.querySelector('.html .num')
+const num2 = document.querySelector('.css .num')
+const num3 = document.querySelector('.js .num')
+const num4 = document.querySelector('.jquery .num')
+const num5 = document.querySelector('.scss .num')
+
+
+ htmlBoxText.style.display = "none";
+ cssBoxText.style.display = "none";
+ jsBoxText.style.display = "none";
+ jqueryBoxText.style.display = "none";
+ scssBoxText.style.display = "none";
+
+htmlBox.addEventListener('mouseover', () => {
+  progress1.style.display = "none";
+  num1.style.display = "none";
+  htmlBoxText.style.display = "block";
+})
+htmlBox.addEventListener('mouseout', () => { 
+  htmlBoxText.style.display = "none";
+  progress1.style.display = "block";
+  num1.style.display = "block";
+})
+
+cssBox.addEventListener('mouseover', () => {
+  progress2.style.display = "none";
+  num2.style.display = "none";
+  cssBoxText.style.display = "block";
+})
+cssBox.addEventListener('mouseout', () => { 
+  cssBoxText.style.display = "none";
+  progress2.style.display = "block";
+  num2.style.display = "block";
+})
+
+jsBox.addEventListener('mouseover', () => {
+  progress3.style.display = "none";
+  num3.style.display = "none";
+  jsBoxText.style.display = "block";
+})
+jsBox.addEventListener('mouseout', () => { 
+  jsBoxText.style.display = "none";
+  progress3.style.display = "block";
+  num3.style.display = "block";
+})
+
+jqueryBox.addEventListener('mouseover', () => {
+  progress4.style.display = "none";
+  num4.style.display = "none";
+  jqueryBoxText.style.display = "block";
+})
+jqueryBox.addEventListener('mouseout', () => { 
+  jqueryBoxText.style.display = "none";
+  progress4.style.display = "block";
+  num4.style.display = "block";
+})
+
+scssBox.addEventListener('mouseover', () => {
+  progress5.style.display = "none";
+  num5.style.display = "none";
+  scssBoxText.style.display = "block";
+})
+scssBox.addEventListener('mouseout', () => { 
+  scssBoxText.style.display = "none";
+  progress5.style.display = "block";
+  num5.style.display = "block";
+})
 
 
 
@@ -419,21 +519,7 @@ gsap
     "start"
   )
 
-/*   .to(
-    ".news_page_bottom", {
-      delay: 0.1,
-      scale: 1.5,
-    },
-    "start"
-  )
-  .to(
-    ".news_page_bottom", {
-      delay: 0,
-      opacity: 1,
-    },
-    "start"
-  )
- */
+
   .to(
     ".project_Page", {
       delay: 0,
@@ -514,84 +600,7 @@ gsap.to(".news_page_bottom", {
   }
 });
 
-/* window.addEventListener('scroll', function () {
-  // 스크롤 위치 감지
-  let scrollPosition = window.scrollY;
-  let targetPosition = 6300; // 원하는 위치
-  let maxPosition = 6350; // 최대 위치
-  let newsPageBottom = document.getElementById('news_page_bottom');
-  let isNewsPageBottomVisible = getComputedStyle(newsPageBottom).opacity === '1';
-  let isNewsPageBottomVisibles = getComputedStyle(newsPageBottom).display === 'none';
 
-  if (scrollPosition >= targetPosition || scrollPosition <= maxPosition && isNewsPageBottomVisible) {
-    // 스크롤 막기
-    document.body.style.overflow = 'hidden';
-  }
-
-  if (isNewsPageBottomVisibles) {
-    document.body.style.overflow = '';
-  }
-
-});
- */
-
-
-/* let newsPageBottom = document.getElementById('news_page_bottom');
-
-$(document).ready(function () {
-  $('.hidden_btn').click(function () {
-    $('.news_page_bottom').fadeOut(function () {
-      $('.project_Page').fadeIn(1000, 'swing');
-    });
-    // 스크롤 활성화
-    document.body.style.overflow = '';
-  });
-});
-hiddenBtn.addEventListener('mouseover', () => {
-  hiddenBtn.src = "./img/페이지꾸미기/on랜턴.png"
-})
-
-
-hiddenBtn.addEventListener('mouseout', () => {
-  hiddenBtn.src = "./img/페이지꾸미기/off랜턴.png"
-})
-
-
-hiddenBtn.addEventListener('click', () => {
-
-  window.addEventListener('scroll', function () {
-    if (window.scrollY >= 6400) {
-      header.style.top = '0'
-      project.style.color = 'red'
-    } else {
-      project.style.color = ''
-    }
-
-    if (window.scrollY >= 7400) {
-      contact.style.color = 'red'
-      project.style.color = ''
-    } else {
-      contact.style.color = ''
-    }
-  })
-
-
-
-
-}) */
-
-
-/* const hiddenDiv = document.querySelector(".hidden");
-const starCount = 100;
-
-for (let i = 0; i < starCount; i++) {
-  const star = document.createElement("div");
-  star.classList.add("star");
-  star.style.top = `${Math.random() * 100}%`;
-  star.style.left = `${Math.random() * 100}%`;
-  star.style.animationDelay = `${Math.random() * 2}s`;
-  hiddenDiv.appendChild(star);
-} */
 
 
 const introVideo = document.querySelector('.intro_video')
